@@ -517,6 +517,7 @@ FOUR-COLUMNS -------------------------------------------
   background-image: url('../images/full-box-1.jpg');
   background-size: cover;
   background-repeat: no-repeat; 
+  background-position: center center;
   height: 129px;
 }
 
@@ -599,7 +600,8 @@ FOUR-COLUMNS -------------------------------------------
 LATEST REPORT COLUMN -------------------------------------------*/
 
 .column-image-2 {
-  background-image: url('../images/column-pic-2.png');
+  background-image: url('../images/full-box-2.jpg');
+  background-position: center center;
 }
 
 .latest-report {
@@ -680,7 +682,8 @@ PRESS RELEASES COLUMN -------------------------------------------*/
 }
 
 .column-image-3 {
-  background-image: url('../images/column-pic-3.png');
+  background-image: url('../images/full-box-3.jpg');
+  background-position: center center;
 }
 
 @media (min-width: 992px){
@@ -701,7 +704,8 @@ PRESS RELEASES COLUMN -------------------------------------------*/
 LOREM IPSUM BOX -------------------------------------------*/
 
 .column-image-4 {
-  background-image: url('../images/column-pic-4.png');
+  background-image: url('../images/full-box-4.jpg');
+  background-position: center center;
 }
 
 .column-title-4 {
