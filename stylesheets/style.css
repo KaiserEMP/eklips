@@ -352,6 +352,10 @@ a:active {
   color: #d5d5d5;
 }
 
+.hasPlaceholder {
+  color: #d5d5d5;
+}
+
 .over-search-box {
   position: relative;
   display: inline-block;
@@ -607,7 +611,6 @@ FOUR-COLUMNS -------------------------------------------
 }
 
 
-.hasPlaceholder {color: #aaa;}
 /* ----------------------------------
 LATEST REPORT COLUMN -------------------------------------------*/
 
