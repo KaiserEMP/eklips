@@ -520,7 +520,82 @@ FOUR-COLUMNS -------------------------------------------
 
 
 .the-column {
-  margin-bottom:20px;
+  overflow: hidden;
+}
+
+@media (min-width: 480px) and (max-width: 540px){
+  .the-column {
+    height: 650px;
+    max-height: 650px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+  .the-column {
+    height: 585px;
+    max-height: 585px;
+  }
+  .last-two-columns > .the-column {
+    height: 502px;
+    max-height: 502px;
+  }
+}
+
+@media (min-width: 768px){
+  .the-column {
+    height: 585px;
+    max-height: 585px;
+  }
+}
+
+@media (min-width: 768px){
+  .last-two-columns > .the-column {
+    height: 502px;
+    max-height: 502px;
+  }
+}
+
+@media (min-width: 992px){
+  .the-column, .last-two-columns > .the-column {
+    height: 614px;
+    max-height: 614px;
+  }
+}
+
+@media (min-width: 1200px){
+  .the-column, .last-two-columns > .the-column {
+    height: 585px;
+    max-height: 585px;
+  }
+}
+
+
+
+.center-column {
+  border: 1px solid #dddddd;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-radius: 0;
+  border-bottom:none;
+}
+
+.column-border {
+  border: none;
+}
+
+.first-lower-column {
+  position: relative;
+  bottom: -6px;
+}
+
+.under-column {
+  width: 100%;
+  height: 13px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin-bottom: 20px;
 }
 
 .column-box {
@@ -535,12 +610,25 @@ FOUR-COLUMNS -------------------------------------------
   height: 129px;
 }
 
-.column-text {
+.image-border {
+  border:none;
+}
+
+.upper-column-text {
   border: 1px solid #dddddd;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-top: none;
   padding: 20px  16px 20px;
+}
+
+.column-text {
+  /*border: 1px solid #dddddd;*/
+  /*border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;*/
+  border-top: none;
+  padding: 20px  16px 20px;
+  border-bottom:none;
 }
 
 .column-calendar {
@@ -561,6 +649,7 @@ FOUR-COLUMNS -------------------------------------------
 }
 
 .all-events {
+  display: block;
   margin-top: 16px;
   text-decoration: none;
   color: #11a5e5;
@@ -572,8 +661,9 @@ FOUR-COLUMNS -------------------------------------------
   border: 1px solid #dddddd;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  /*border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;*/
+  border-bottom:none;
   padding: 20px  16px 20px;
 }
 
@@ -676,7 +766,7 @@ LATEST REPORT COLUMN -------------------------------------------*/
     margin-left: 30px;
 }
 
-@media (min-width: 992px){
+/*@media (min-width: 992px){
   .latest-read-more {
     display: block;
     margin-bottom: 18px;
@@ -688,7 +778,7 @@ LATEST REPORT COLUMN -------------------------------------------*/
     margin-bottom: 55px;
   }
 }
-
+*/
 /* ----------------------------------
 PRESS RELEASES COLUMN -------------------------------------------*/
 
@@ -701,6 +791,7 @@ PRESS RELEASES COLUMN -------------------------------------------*/
   background-position: center center;
 }
 
+/*
 @media (min-width: 992px){
   .all-releases {
     display: block;
@@ -714,7 +805,7 @@ PRESS RELEASES COLUMN -------------------------------------------*/
     margin-bottom: 37px;
   }
 }
-
+*/
 /* ----------------------------------
 LOREM IPSUM BOX -------------------------------------------*/
 
