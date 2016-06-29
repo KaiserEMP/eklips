@@ -320,15 +320,17 @@ a:active {
 }
 
 .pre-search-box {
+  display: inline-block;
   background-color: transparent;
   border: none;
   box-shadow: none;
   color: #d5d5d5;
-  width:50%;
+  width: 170px;
   margin: 0 auto;
 }
 
 .search-box {
+  margin-right: 30px;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -352,12 +354,13 @@ a:active {
 
 .over-search-box {
   position: relative;
+  display: inline-block;
 }
 
 .search-zoom {
   position: absolute;
   top: 3px;
-  right: 85px;
+  right: 0;
   padding: 12px;
   width: 30px;
   height: 30px;
@@ -366,6 +369,13 @@ a:active {
   background-position: center; 
   border:none;
   background-color: transparent;
+}
+
+.pre-search-zoom {
+  position: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  top:1px;
 }
 
 .nav-lang {
@@ -596,6 +606,8 @@ FOUR-COLUMNS -------------------------------------------
   font-size: 17px;
 }
 
+
+.hasPlaceholder {color: #aaa;}
 /* ----------------------------------
 LATEST REPORT COLUMN -------------------------------------------*/
 
