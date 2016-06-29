@@ -19,66 +19,6 @@
 /* #Setup - Fonts
    -------------------------------------------------------------------------- */
 
-@font-face {
-   font-family: 'nerislight';
-   src: url('../assets/neris-light-webfont.eot');
-   src: url('../assets/neris-light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/neris-light-webfont.woff') format('woff'),
-        url('../assets/neris-light-webfont.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-}
-
-@font-face {
-   font-family: 'nerislight_italic';
-   src: url('../assets/neris-lightitalic-webfont.eot');
-   src: url('../assets/neris-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/neris-lightitalic-webfont.woff') format('woff'),
-        url('../assets/neris-lightitalic-webfont.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-}
-
-@font-face {
-   font-family: 'nerissemibold';
-   src: url('../assets/neris-semibold-webfont.eot');
-   src: url('../assets/neris-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/neris-semibold-webfont.woff') format('woff'),
-        url('../assets/neris-semibold-webfont.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-}
-
-@font-face {
-    font-family: 'yanone_kaffeesatzbold';
-    src: url('../assets/yanonekaffeesatz-bold-webfont.eot');
-    src: url('../assets/yanonekaffeesatz-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/yanonekaffeesatz-bold-webfont.woff') format('woff'),
-         url('../assets/yanonekaffeesatz-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'yanone_kaffeesatzlight';
-    src: url('../assets/yanonekaffeesatz-light-webfont.eot');
-    src: url('../assets/yanonekaffeesatz-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/yanonekaffeesatz-light-webfont.woff') format('woff'),
-         url('../assets/yanonekaffeesatz-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'yanone_kaffeesatzregular';
-    src: url('../assets/yanonekaffeesatz-regular-webfont.eot');
-    src: url('../assets/yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/yanonekaffeesatz-regular-webfont.woff') format('woff'),
-         url('../assets/yanonekaffeesatz-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 /* --------------------------------------------------------------------------
    //////////////////////////////////////////////////////////////////////////
@@ -105,7 +45,6 @@ h2{
   margin-bottom: 16px;
   font-size: 27px;
   line-height: normal;
-
 }
 
 p{
@@ -145,7 +84,7 @@ a:active {
 /* --------------------------------------------------------------------------
    //////////////////////////////////////////////////////////////////////////
 
-   #Navbar
+   #Navbar (Menu)
 
    //////////////////////////////////////////////////////////////////////////
 
@@ -392,9 +331,14 @@ a:active {
 }
 
 
-/* ----------------------------------
-SLIDER -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #Slider
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 #owl-demo .item img{
@@ -413,29 +357,33 @@ SLIDER -------------------------------------------
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
+  -webkit-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
 }
 
 .slide-text p{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
   font-size: 22px;
   font-weight: bold;
   color: white;
-  text-align: center;
-  width: 85%;
-  margin: 0 auto;
-  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
 
 @media (min-width: 768px){
   .slide-text p{
-    font-size: 40px;
     width: 80%;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 992px){
   .slide-text p{
-    font-size: 55px;
     width: 80%;
+    font-size: 55px;
   }
 }
 
@@ -470,10 +418,14 @@ SLIDER -------------------------------------------
 }
 
 
-/* ----------------------------------
-BELOW-SLIDER TEXT -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
 
+   #Below slider text
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 .leading-text {
   width: 100%;
@@ -489,34 +441,39 @@ BELOW-SLIDER TEXT -------------------------------------------
 
 .leading-text h1 {
   width:80%;
-  font-size: 28px;
   margin: 0 auto;
   text-align: center;
+  font-size: 28px;
   color:#585858;
 }
 
 @media (min-width: 768px){
   .leading-text h1 {
     width:60%;
-    font-size: 36px;
     margin: 0 auto;
-    text-align: center;
-    color:#585858;
     margin-bottom: 15px;
+    text-align: center;
+    font-size: 36px;
+    color:#585858;
   }
 }
 
 @media (min-width: 992px){
   .leading-text h1 {
-    font-size: 38px;
     width:66%;
+    font-size: 38px;
   }
 }
 
 
-/* ----------------------------------
-FOUR-COLUMNS -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #Four box columns
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 .the-column {
@@ -570,7 +527,6 @@ FOUR-COLUMNS -------------------------------------------
 }
 
 
-
 .center-column {
   border: 1px solid #dddddd;
   border-top-left-radius: 12px;
@@ -591,14 +547,15 @@ FOUR-COLUMNS -------------------------------------------
 .under-column {
   width: 100%;
   height: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  border: 1px solid #ddd;
   border-top: none;
-  margin-bottom: 20px;
 }
 
 .column-box {
+  height: 129px;
   border: 1px solid #dddddd;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -607,7 +564,6 @@ FOUR-COLUMNS -------------------------------------------
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center center;
-  height: 129px;
 }
 
 .image-border {
@@ -615,17 +571,14 @@ FOUR-COLUMNS -------------------------------------------
 }
 
 .upper-column-text {
+  padding: 20px  16px 20px;
   border: 1px solid #dddddd;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   border-top: none;
-  padding: 20px  16px 20px;
 }
 
 .column-text {
-  /*border: 1px solid #dddddd;*/
-  /*border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;*/
   border-top: none;
   padding: 20px  16px 20px;
   border-bottom:none;
@@ -651,20 +604,18 @@ FOUR-COLUMNS -------------------------------------------
 .all-events {
   display: block;
   margin-top: 16px;
+  font-size: 18px;
   text-decoration: none;
   color: #11a5e5;
-  font-size: 18px;
 }
 
 .lower-column {
   margin-top: 15px;
+  padding: 20px  16px 20px;
   border: 1px solid #dddddd;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
-  /*border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;*/
   border-bottom:none;
-  padding: 20px  16px 20px;
 }
 
 .column-share {
@@ -701,8 +652,9 @@ FOUR-COLUMNS -------------------------------------------
 }
 
 
-/* ----------------------------------
+/* -------------------------------------------------------------
 LATEST REPORT COLUMN -------------------------------------------*/
+
 
 .column-image-2 {
   background-image: url('../images/full-box-2.jpg');
@@ -766,21 +718,10 @@ LATEST REPORT COLUMN -------------------------------------------*/
     margin-left: 30px;
 }
 
-/*@media (min-width: 992px){
-  .latest-read-more {
-    display: block;
-    margin-bottom: 18px;
-  }
-}
 
-@media (min-width: 1200px){
-  .latest-read-more {
-    margin-bottom: 55px;
-  }
-}
-*/
-/* ----------------------------------
+/* --------------------------------------------------------------
 PRESS RELEASES COLUMN -------------------------------------------*/
+
 
 .press-releases {
   color: #40bc58;
@@ -791,23 +732,10 @@ PRESS RELEASES COLUMN -------------------------------------------*/
   background-position: center center;
 }
 
-/*
-@media (min-width: 992px){
-  .all-releases {
-    display: block;
-    margin-bottom: 25px;
-  }
-}
 
-@media (min-width: 992px){
-  .all-releases {
-    display: block;
-    margin-bottom: 37px;
-  }
-}
-*/
-/* ----------------------------------
+/* --------------------------------------------------------
 LOREM IPSUM BOX -------------------------------------------*/
+
 
 .column-image-4 {
   background-image: url('../images/full-box-4.jpg');
@@ -830,9 +758,14 @@ LOREM IPSUM BOX -------------------------------------------*/
 }
 
 
-/* ----------------------------------
-NEWS-SECTION -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #News section
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 .news {
@@ -856,10 +789,10 @@ NEWS-SECTION -------------------------------------------
 }
 
 .news-title {
-  color: #384654;
   margin:30px 0;
   font-size: 36px;
   font-weight: bold;
+  color: #384654;
 }
 
 .news-image-1 img{
@@ -880,8 +813,8 @@ NEWS-SECTION -------------------------------------------
 }
 
 .news-date {
-  color: #bebdbd;
   font-size: 15px;
+  color: #bebdbd;
 }
 
 .all-news {
@@ -889,9 +822,14 @@ NEWS-SECTION -------------------------------------------
 }
 
 
-/* ----------------------------------
-PRE-FOOTER -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #Pre-footer
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 .pre-footer {
@@ -913,10 +851,10 @@ PRE-FOOTER -------------------------------------------
 }
 
 .bottom-lists {
-  text-align: center;
   padding:0;
-  color: #fff;
+  text-align: center;
   font-size: 13px;
+  color: #fff;
 }
 
 @media (min-width: 992px){
@@ -936,9 +874,14 @@ PRE-FOOTER -------------------------------------------
 }
 
 
-/* ----------------------------------
-UPPER-FOOTER -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #Upper-footer
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 .footer {
@@ -961,12 +904,12 @@ UPPER-FOOTER -------------------------------------------
 
 .social-box::after {
   content: "";
-  width: 100%;
-  background: #7b7b7b;
-  height: 2px;
   position: absolute;
+  width: 100%;
+  height: 2px;
   bottom: -30px;
   left: 0;
+  background: #7b7b7b;
 }
 
 @media (min-width: 768px){
@@ -1002,8 +945,10 @@ UPPER-FOOTER -------------------------------------------
   }
 }
 
-/* ----------------------------------
+
+/* -----------------------------------------------------
 SOCIAL ICONS -------------------------------------------*/
+
 
 .social-google,
 .social-twitter,
@@ -1024,11 +969,11 @@ SOCIAL ICONS -------------------------------------------*/
 .social-instagram span,
 .social-youtube span,
 .social-slideshare span {
-  color: white;
-  bottom: -70px;
   position: relative;
+  bottom: -70px;
   display:table;
   margin:0 auto;
+  color: white;
 }
 
 .social-google {
@@ -1088,9 +1033,14 @@ SOCIAL ICONS -------------------------------------------*/
 }
 
 
-/* ----------------------------------
-BOTTOM-FOOTER -------------------------------------------
--------------------------------------*/
+/* --------------------------------------------------------------------------
+   //////////////////////////////////////////////////////////////////////////
+
+   #Bottom footer
+
+   //////////////////////////////////////////////////////////////////////////
+
+   -------------------------------------------------------------------------- */
 
 
 .bottom-footer {
@@ -1128,8 +1078,8 @@ BOTTOM-FOOTER -------------------------------------------
 }
 
 .footer-text p {
-  color:#666666;
   font-size: 11px;
+  color:#666666;
 }
 
 .lighter-privacy {
