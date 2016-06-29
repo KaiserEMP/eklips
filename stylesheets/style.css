@@ -170,12 +170,32 @@ a:active {
 .navbar-toggle {
   padding: 19px 18px;
   margin-top: 22px;
+  margin-left: 30px;
 }
 
 .collapsed-nav-items {
   position: relative;
   top: 16px;
   left: 30px;
+  width:250px;
+}
+
+@media (min-width: 500px){
+  .collapsed-nav-items {
+    width:330px;
+  }
+}
+
+.collapsed-nav-items .nav-price {
+  font-size: 10px;
+  padding-top: 4px;
+}
+
+@media (min-width: 500px){
+  .collapsed-nav-items .nav-price {
+    font-size: 14px;
+    padding-top: 0;
+  }
 }
 
 .nav-custom {
@@ -222,7 +242,7 @@ a:active {
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: cyan;
+  color: #3696d3;
   background-color: transparent;
 }
 
@@ -268,6 +288,8 @@ a:active {
   position: relative;
 }
 
+
+
 .nav-price:before {
   content: " ";
   position: absolute;
@@ -282,6 +304,7 @@ a:active {
   width: 20px;
   height: 20px;
   background-image: url(../images/nav-mail.png);
+  cursor: pointer
 }
 
 .nav-fax {
@@ -289,6 +312,7 @@ a:active {
   height: 20px;
   background-image: url(../images/nav-fax.png);
   margin-right: 10px;
+  cursor: pointer
 }
 
 .navbar-form .form-control {
@@ -332,11 +356,11 @@ a:active {
 
 .search-zoom {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 85px;
   padding: 12px;
-  width: 12px;
-  height: 12px;
+  width: 30px;
+  height: 30px;
   background-image: url(../images/zoom.png);
   background-repeat: no-repeat;
   background-position: center; 
